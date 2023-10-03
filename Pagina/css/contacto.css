@@ -1,0 +1,337 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: white;
+}
+
+nav .navbar{
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+.navlogo{
+    width: 250px;
+    height: auto;
+    margin-left: 35px;
+}
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+}
+
+
+.pestanas{
+    margin: 0 15px 0 15px;
+    width: max-content;
+    position: relative;
+}
+.pestanaenlace{
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.btn-menu {
+    display: none;
+}
+.icono-cerrar {
+    display: none;
+    background: none;
+    border: none;
+    position: fixed;
+}
+
+
+
+.titulo-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 40px;
+}
+.titulo-contacto h2{
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+.introduccion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  	font-size: 1rem;
+}
+.contacto-subtitulo-1{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px;
+  	letter-spacing: 6px;
+}
+.escribenos-introduccion{
+    display: flex;
+    justify-content: center;
+    padding: 10px;   
+}
+.contacto-escribenos{
+    background: linear-gradient(135deg, #a8cfe9, #00204b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+.contacto-formulario{
+    background:#ffffff;
+    width: calc(100% / 2 - 20px);;
+    display: block;
+    border-radius: 20px;
+}
+.contacto-escribenos form .contacto-input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 12px 15px;
+    align-items: flex-start;
+    width: 90%;
+    justify-content: center;
+}
+.contacto-input input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+.contacto-input input:focus,
+.contacto-input input:valid{
+    border-color: #c98ce0;
+}
+.contacto-input select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.contacto-input select:focus,
+.contacto-input select:invalid{
+    border-color: #c98ce0;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+textarea{
+    width: 92%;
+    height: 150px;
+    overflow: auto;
+    resize: vertical;
+    padding: 8px;
+}
+.form-boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form .button{
+    height: 45px;
+    margin: 20px 0;
+    width: 45%;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #000000;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#a8cfe9, #00204b);
+    transition: all 0.3s ease-in-out;
+}
+
+form .button input:hover{
+    background: linear-gradient(-135deg, #a8cfe9, #00204b);
+    cursor: pointer;
+    color: #000000;
+    transform: scale(1.09);
+}
+.mensaje-imagen{
+    width: 50px;
+    height: auto;
+    margin-right: 1.1rem;
+}
+.exito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mensaje-exito{
+    display: none;
+    background-color: #b9d4fc;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+.mensaje-exito.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.escribenos-whatsapp{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #93ff93;
+    border-radius: 0 0 20px 20px;
+    align-items: center;
+}
+.contacto-whatsapp{
+    padding: 10px;
+}
+.contacto-whatsapp a{
+    text-decoration: none;
+    color: #000;
+}
+.contacto-imagen{
+    width: 80px;
+}
+.informacion-subtitulo-2{
+  	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 35px;
+	font-weight: 600;
+	padding: 10px;
+	background-image: linear-gradient(130deg, #a8cfe9, #00204b);
+	background-clip: text;
+	-webkit-background-clip: text; /* Para navegadores basados en Webkit, como Safari */
+	color: transparent;
+	letter-spacing: 6px;
+}
+.informacion-ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.informacion{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 11px 2px #05b3b0, -5px -5px 11px 2px #898bff;
+    width: 60rem;
+    border-radius: 15px;
+    padding: 10px;
+}
+.informacion iframe{
+    width: 75%;
+}
+.informacion-domicilio{
+    padding-left: 50px;
+}
+.informacion-atencion{
+	font-size: 18px;
+  	font-weight: 600;
+  	padding-top: 20px;
+}
+
+
+
+.pie-pagina {
+    background-color:linear-gradient(135deg, #ffffff, #00204b);
+    margin-top: 20px;
+    padding: 26px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.columna-pie{
+    flex: 1;
+    margin-right: 20px;
+}
+.columna-pie:last-child{
+    margin-right: 0;
+}
+.octavo-titulo{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.columna-pie a{
+    text-decoration: none;
+}
+.telefono{
+    display: flex;
+    align-items: center;
+}
+.telefono img{
+    width: 32px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.telefono-pie{
+    margin-top: 10px;
+    color: #000;
+}
+.ul-pie {
+    list-style: none;
+    padding: 0;
+}
+.ul-pie li {
+    margin-bottom: 5px;
+}
+.ul-pie li a {
+    color: #333333;
+    text-decoration: none;
+    transition: font-size 0.3s ease-in-out;
+}
+.ul-pie li a:hover{
+    color: purple;
+    font-size: 22px;    
+}
+.redes-sociales {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    list-style: none;
+}
+.redes-sociales li a{
+    text-decoration: none;
+    color: #000000;
+    line-height: 2.2;
+}
+.redes-sociales img {
+    width: 24px;
+    height: 24px;
+    margin-top: 1px;
+    margin-right: 15px;
+}
